@@ -355,4 +355,4 @@ client.on('messageDelete', async message => {
     channel.send(embed)
 });
 
-client.login("NzU5NjIwODc1ODMzNDQyMzI2.X3AKEQ.3aNh3OPPuj5khCDSifOtqI0tTBA");
+client.login(process.env.token);
