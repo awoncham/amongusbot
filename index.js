@@ -326,7 +326,7 @@ client.on('messageReactionRemove', async (reaction, user) => {
 //메시지 수정
 client.on('messageUpdate', async(oldMessage, newMessage) => {
   if(oldMessage.content === newMessage.content) return // 임베드로 인한 수정같은 경우 
-  const channel = client.channels.cache.find(channel => channel.id === '775897939968917534')
+  const channel = client.channels.cache.find(channel => channel.id === '776592745954541578')
   const user = oldMessage.mentions.users.first() || oldMessage.author;
   const embed = new Discord.MessageEmbed()
   .setTitle('📝 수정 로그')
@@ -345,7 +345,7 @@ client.on('messageUpdate', async(oldMessage, newMessage) => {
 client.on('messageDelete', async message => {
     const user = message.author.id
     const user1 = message.mentions.users.first() || message.author;
-    const channel = client.channels.cache.find(channel => channel.id === '775897939968917534')
+    const channel = client.channels.cache.find(channel => channel.id === '776592745954541578')
     const embed = new Discord.MessageEmbed()
     .setTitle('❌ 삭제 로그')
     .setColor('#FF0000')
@@ -355,4 +355,4 @@ client.on('messageDelete', async message => {
     channel.send(embed)
 });
 
-client.login(process.env.token);
+client.login("NzU5NjIwODc1ODMzNDQyMzI2.X3AKEQ.3aNh3OPPuj5khCDSifOtqI0tTBA");
